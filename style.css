@@ -1,0 +1,72 @@
+body {
+    background-color: #1a1a3a;
+}
+.container {
+    border: 10px solid white;
+    background-color: #FFFFFF; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usuario1 {
+    display: flex;
+    margin-left: 7rem;
+}
+
+a img {
+    display: flex;
+    align-items: center;
+    max-width: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hBotao {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: small;
+    padding: 3px;
+    display: inline-block;
+    align-content: center;
+    padding: 5px 10px;
+    margin: 5px;
+    color: #FFFFFF;
+    background-color: #1a1a3a;
+    text-decoration: none; 
+    border-radius: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#tabela h1 {
+    font-family: "Black Han Sans", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 5rem;
+    margin-left: 4rem;
+}
+
+#tb {
+    margin-top: 8rem;
+}
+
+main img {
+    margin-left: 20rem;
+    margin-top: 6rem;
+    max-width: 25rem;
+    max-height: 25rem;
+}
+
+hr {
+    border: 5px solid white;
+}
+

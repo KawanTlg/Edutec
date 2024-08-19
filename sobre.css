@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.cabecalho {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+    padding: 50px;
+}
+
+.logo img {
+    max-width: 70px;
+}
+
+header h1 {
+    font-size: 30px;
+    color: #4c2c82;
+    margin: 0 auto;
+}
+
+.criadores {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.creador {
+    text-align: center;
+    flex: 1;
+}
+
+.photo-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+}
+
+.creador p {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    background-color: #2e2e55;
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-logos img {
+    width: 25px;
+    height: 25px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ddd;
+}
