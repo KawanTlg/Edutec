@@ -87,13 +87,6 @@ input[type="range"] {
     text-align: center;
 }
 
-.btn-logout {
-    background-color: var(--roxo);
-}
-
-.btn-delete {
-    background-color: var(--vermelho);
-}
 
 .btn-cancel {
     background-color: var(--verde);

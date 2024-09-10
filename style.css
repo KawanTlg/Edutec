@@ -1,7 +1,22 @@
+main {
+    max-width: 100%;
+}
+
 body {
     background-color: #0c1631;
 }
+
+header {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
 .container {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 80rem;
     border: 10px solid white;
     background-color: #FFFFFF; 
     display: flex;
@@ -11,6 +26,7 @@ body {
 
 .usuario {
     display: flex;
+    align-items: center;
 }
 
 a img {
@@ -28,21 +44,21 @@ a {
     font-weight: 200;
     font-style: normal;
     font-size: small;
-    padding: 3px;
+    padding: 0.188rem;
     display: inline-block;
     align-content: center;
-    padding: 5px 10px;
-    margin: 5px;
+    padding: 0.313rem 2rem;
+    margin: 0.313rem;
     color: #FFFFFF;
     background-color: #1a1a3a;
     text-decoration: none; 
-    border-radius: 20px;
+    border-radius: 5rem;
     text-align: center;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
+
+.logo {
+    margin-left: 2rem;
 }
 
 #tabela h1 {
@@ -51,23 +67,39 @@ main {
     font-style: normal;
     color: #FFFFFF;
     font-size: 8rem;
-    margin-top: 20rem;
-    margin-left: 4rem;
+    margin-top: 12rem;
+    margin-left: 8.5rem;
 }
 
 #tb {
     margin-top: 8rem;
 }
 
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
 main img {
-    margin-top: 10rem;
-    margin-left: 35rem;
-    max-width: 25rem;
-    max-height: 25rem;
+    margin-top: 3.5rem;
+    margin-left: 50rem;
+    margin-right: 2.5rem;
+    max-width: 28rem;
+    max-height: 28rem;
+    position: absolute;
 }
 
 hr {
-    margin-top: 15rem;
-    border: 10px solid white;
+    max-width: 70rem;
+    margin-top: 2.5rem;
+    border: 0.5rem solid white;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Nokora", sans-serif;
 }
 
