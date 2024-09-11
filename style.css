@@ -1,24 +1,33 @@
-main {
-    max-width: 100%;
-}
-
-body {
-    background-color: #0c1631;
-}
+:root {
+    --main-bg-color: #0c1631;
+    --branco: #fff;
+  }
 
 header {
     display: flex;
     align-items: flex-start;
-    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-color); 
+    color: var(--branco);
+}
+
+main {
+    max-width: 100%;
 }
 
 .container {
     display: flex;
     align-items: center;
     height: 5rem;
-    width: 80rem;
-    border: 10px solid white;
-    background-color: #FFFFFF; 
+    width: 100%;
+    border: 0.5rem solid var(--branco);
+    border-right: 3rem solid var(--branco);
+    background-color: var(--branco);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,7 +35,12 @@ header {
 
 .usuario {
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.usuario img{
+    max-width: 5rem;
 }
 
 a img {
@@ -44,13 +58,11 @@ a {
     font-weight: 200;
     font-style: normal;
     font-size: small;
-    padding: 0.188rem;
     display: inline-block;
     align-content: center;
     padding: 0.313rem 2rem;
-    margin: 0.313rem;
-    color: #FFFFFF;
-    background-color: #1a1a3a;
+    color: var(--branco);
+    background-color: var(--main-bg-color);
     text-decoration: none; 
     border-radius: 5rem;
     text-align: center;
@@ -61,14 +73,18 @@ a {
     margin-left: 2rem;
 }
 
+.logo img {
+    max-width: 6rem;
+}
+
 #tabela h1 {
     font-family: "Black Han Sans", system-ui;
     font-weight: 800;
     font-style: normal;
-    color: #FFFFFF;
+    color: var(--branco);
     font-size: 8rem;
-    margin-top: 12rem;
-    margin-left: 8.5rem;
+    margin-top: 12.5rem;
+    margin-left: -150px;
 }
 
 #tb {
@@ -78,12 +94,12 @@ a {
 
 main {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
 }
 
 main img {
     margin-top: 3.5rem;
-    margin-left: 50rem;
+    margin-left: 50%;
     margin-right: 2.5rem;
     max-width: 28rem;
     max-height: 28rem;
@@ -93,13 +109,12 @@ main img {
 hr {
     max-width: 70rem;
     margin-top: 2.5rem;
-    border: 0.5rem solid white;
+    border: 0.5rem solid var(--branco);
 }
 
 p {
     display: flex;
     justify-content: center;
-    color: white;
+    color: var(--branco);
     font-family: "Nokora", sans-serif;
 }
-

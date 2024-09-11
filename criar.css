@@ -1,3 +1,8 @@
+:root {
+  --main-bg-color: #0c1631;
+  --branco: #fff;
+}
+
 body {
     background-color: #d0e3ef;
     font-family: sans-serif;
