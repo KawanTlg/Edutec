@@ -1,105 +1,114 @@
 :root {
-    --main-bg-color: #0c1631;
-    --branco: #fff;
-  }
+    --main-bg-color: #f4f4f4;
+    --header-color: #4c2c82;
+    --footer-bg-color: #0c1631;
+    --footer-text-color: #ddd;
+    --white: #fff;
+    --gray: #ddd;
+}
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--white);
 }
 
 .cabecalho {
-    margin: 0 auto;
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: var(--white);
     padding: 20px;
-}
-
-.cabecalho h1 {
-    font-family: "Black Han Sans", system-ui;
-    font-weight: 800;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.logo {
-    display: flex;
-    margin-left: 3rem;
 }
 
 .logo img {
-    max-width:5rem;
+    max-width: 70px;
+    margin-right: 20px;
 }
 
-header h1 {
-    font-size: 30px;
-    color: #4c2c82;
-    margin-left: 25rem;
-    margin-bottom: 10rem;
+.cabecalho h1 {
+    font-family: "Black Han Sans", system-ui;
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--header-color);
 }
 
 .criadores {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 1000px;
+    padding: 0 20px;
 }
 
 .creador {
     text-align: center;
-    flex: 1;
 }
 
 .photo-placeholder {
-    width: 100px;
-    height: 100px;
-    background-color: #ddd;
-    margin: 0 auto 10px;
+    width: 120px;
+    height: 120px;
+    background-color: var(--gray);
+    margin-bottom: 10px;
     border-radius: 10px;
+    overflow: hidden; 
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 
 .creador p {
     font-size: 16px;
-    margin: 0;
     color: #333;
 }
 
 footer {
+    background-color: var(--footer-bg-color);
+    color: var(--white);
+    padding: 70px 0;
     text-align: center;
-    background-color: #2e2e55;
-    color: white;
-    padding: 20px 0;
-    margin-top: 6rem;
 }
 
-.contact-info {
+footer p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.informacoes {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-bottom: 20px;
-    color: #ddd;
 }
 
-.footer-logos {
+.rodape {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-bottom: 10px;
 }
 
-.footer-logos img {
-    width: 25px;
-    height: 25px;
+.rodape img {
+    width: 30px;
+    height: 30px;
 }
 
-footer p {
-    margin: 5px 0;
-    font-size: 14px;
-    color: #ddd;
+@media (max-width: 768px) {
+    .criadores {
+        flex-direction: column;
+    }
+
+    .rodape img {
+        width: 25px;
+        height: 25px;
+    }
 }
