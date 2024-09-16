@@ -11,7 +11,7 @@ header {
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Black Han Sans", system-ui;
     max-width: 100%;
     background-color: var(--main-bg-color); 
     color: var(--branco);
@@ -57,36 +57,64 @@ body {
 
 
 .logo {
+    display: flex;
+    align-items: center;
     margin-left: 2rem;
 }
-
 
 .logo img {
     max-width: 6rem;
 }
 
-.mainh1{
+.seta{
+    margin-top: 2rem;
+}
+
+main h1 {
     display: flex;
-    align-items: center;
+    justify-content: center;
     font-family: "Black Han Sans", system-ui;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     color: var(--branco);
+    font-size: 3.5rem;
+    margin: 0;
+    margin-top: 5rem;
 }
 
-.criadores {
+.criadores nav {
     display: flex;
-    justify-content: space-around; 
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 2rem;
 }
 
-.quimicos img{
-    max-width: 5rem;
+.criadores img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    max-width: 15rem;
+    border-radius: 2rem;
 }
 
-.quimicos p{
-    margin-top: 0.5rem;
-    color: var(--branco);
-    text-decoration: none;
+.criadores p {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.criadores img:hover {
+    border: solid 0.25rem var(--branco);
+    transition: 0.2s;
+}
+
+@media (min-width: 1920px) {
+    main h1 {
+        margin-top: 10rem;
+        font-size: 4rem;
+    }
+
+    .criadores img {
+        clip-path: inset(0);
+    }
+  }

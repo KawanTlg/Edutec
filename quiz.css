@@ -17,6 +17,11 @@ body {
     color: var(--branco);
 }
 
+.logo img{
+    max-width: 6rem;
+    margin-left: 2rem;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -38,16 +43,6 @@ body {
 
 .usuario img{
     max-width: 5rem;
-}
-
-a img {
-    display: flex;
-    align-items: center;
-    max-width: 5rem;
-}
-
-a {
-    text-decoration: none;
 }
 
 .hBotao {
@@ -85,15 +80,26 @@ body .conteudo {
 }
 
 .quiz-titulo {
-    font-size: 4rem;
-    color: #FFF;
-    font-weight: bold;
+    font-family: "Black Han Sans", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    margin: 0;
+}
+
+hr {
+    margin-bottom: 0;
+    max-width: 25rem;
 }
 
 .quiz-subtitulo {
-    font-size: 2.2rem;
+    font-family: "Nokora", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
     color: white;
-    margin-bottom: 20px;
+    margin: 0;
+    margin-bottom: 2rem;
 }
 
 .inicioquiz {
@@ -107,7 +113,7 @@ body .conteudo {
 }
 
 .inicioquiz:hover {
-    background-color: #f0f0f0;
+    background-color: #4c2c82;
 }
 
 @media (max-width: 768px) {
@@ -115,4 +121,15 @@ body .conteudo {
         flex-direction: column;
     }
 
+}
+
+
+.botaoQuiz button{
+    border: 1rem solid var(--branco);
+    border-radius: 1.5rem;
+}
+
+.botaoQuiz button:hover{
+    border: 1rem solid #4c2c82;
+    border-radius: 1.5rem;
 }

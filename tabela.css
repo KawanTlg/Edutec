@@ -15,7 +15,13 @@ body {
     background-color: #0c1631;
     max-width: 100%;
     color: var(--branco);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    
 }
+
 
 .container {
     display: flex;
@@ -82,10 +88,11 @@ a {
 
 .tabela h1 {
     font-family: "Black Han Sans", system-ui;
-    font-weight: 400;
+    font-weight: 800;
     font-style: normal;
-    color: #356aba; 
-    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 3rem;
+    color: #775ea1; 
     margin: 0;
 }
 
@@ -110,4 +117,187 @@ a {
 .image-container p {
     margin-top: 10px;
     font-size: 1.2rem;
+}
+
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 60px);
+    grid-template-rows: repeat(10, 60px);
+    grid-gap: 10px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1e1e1;
+    border-radius: 5.5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 5.5px;
+    border:none
+}
+ 
+
+.element span {
+    font-size: 12px;
+    color: #e1e1e1;
+}
+
+.element-number {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.element-symbol {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.element-name {
+    font-size: 17px;
+}
+
+.classification  {
+    border-width: 2.5px;
+}
+
+.classification h1 {
+    font-size: 25px;
+}
+
+.classification p {
+    color: var(--branco);
+    font-size: 15px;
+}
+
+.alkali {
+    background-color: #29727d;
+}
+
+.alkaline-earth {
+    background-color: #a92541;
+}
+
+.transition-metal {
+    background-color: #6449be;
+}
+
+.post-transition-metal {
+    background-color: #3a6e58;
+}
+
+.metalloid {
+    background-color: #826531;
+}
+
+.non-metal {
+    background-color: #2b66c3;
+}
+
+.halogen {
+    background-color: #add8e6;
+}
+
+.noble-gas {
+    background-color: #ba4d71;
+}
+
+.lanthanide {
+    background-color: #284757;
+}
+
+.actinide {
+    background-color: #a44426;
+}
+
+.unknown-mental {
+    background-color: #44434d;
+}
+
+.cact div {
+    align-items: center;
+    justify-content: center; 
+}
+
+.periodic-table button:hover {
+
+}
+
+.subdivisao {
+    max-width: 40rem;
+    margin-left: 57.5rem;
+    margin-right: 49rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 0.3rem solid white;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 2rem;
+
+}
+
+.retangulo h1{
+  text-decoration: up case;
+}
+
+.retangulo p {
+ font-size: 15px;
+margin-left: 1rem;
+margin-right: 1rem;
+}
+
+#Metais-alcalinos {
+    background-color: #29727d;
+}
+
+#Semimetais {
+ background-color: #826531;
+}
+
+#Actinídeos {
+    background-color: #a44426;
+}
+
+#Metais-alcalinoterrosos {
+    background-color: #a92541;
+}
+
+#Ametais-reativos {
+background-color: #2b66c3;
+}
+
+#Propriedades-desconhecidas {
+background-color: #44434d;
+}
+
+#Metais-transição {
+background-color: #6449be;
+}
+
+#Metais-pós-transição {
+background-color: #3a6e58;
+}
+
+#Gases-nobres {
+background-color: #ba4d71;
+}
+
+#Lantanídeos {
+background-color: #284757;
+}
+
+@media (max-width: 1920px) {
+    .box {
+        width: 100%; /* Each box takes up full width */
+        padding-bottom: 100%; /* Maintain square shape */
+    }
 }

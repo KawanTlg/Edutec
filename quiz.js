@@ -1,103 +1,41 @@
-const perguntas = [
-    //quiz1//
-    {
-     pergunta: "Quem criou o primeiro modelo atomico?",
-     respostas:[
-        {texto: "Thomson",correto:false},
-        {texto: "Rutherford",correto:false},
-        {texto: "Bohr",correto:false},
-        {texto: "Dalton", correto:true}
-    ]
-},
-    //quiz2//
-{
-    pergunta: "Quem organizou a Tabela Periódica?",
-    respostas:[
-       {texto: "Dmitri Mendeleev",correto:true},
-       {texto: "Albert Einstein",correto:false},
-       {texto: "Marie Curie",correto:false},
-       {texto: "NASA", correto:false}
-   ]
-},
-    //quiz3//
-{
-    pergunta: "Qual modelo atômico é conhecido como Pudim de Passas?",
-    respostas:[
-       {texto: "Modelo de Daton",correto:false},
-       {texto: "Modelo de Bohr",correto:false},
-       {texto: "Modelo de Thomson",correto:true},
-       {texto: "Modelo de Rutherford", correto:false}
-   ]
-},
-    //quiz4//
-{
-    pergunta: "Quem criou o primeiro modelo atomico?",
-    respostas:[
-       {texto: "Thomson",correto:false},
-       {texto: "Rutherford",correto:false},
-       {texto: "Bohr",correto:false},
-       {texto: "Dalton", correto:true}
-   ]
-},
-    //quiz5//
-{
-    pergunta: "Quem criou o primeiro modelo atomico?",
-    respostas:[
-       {texto: "Thomson",correto:false},
-       {texto: "Rutherford",correto:true},
-       {texto: "Bohr",correto:false},
-       {texto: "Dalton", correto:false}
-   ]
-},
-    //quiz6//
-{
-    pergunta: "Quem criou o primeiro modelo atomico?",
-    respostas:[
-       {texto: "Thomson",correto:true},
-       {texto: "Rutherford",correto:false},
-       {texto: "Bohr",correto:false},
-       {texto: "Dalton", correto:false}
-   ]
-},
-    //quiz7//
-{
-    pergunta: "Quem criou o primeiro modelo atomico?",
-    respostas:[
-       {texto: "Thomson",correto:false},
-       {texto: "Rutherford",correto:true},
-       {texto: "Bohr",correto:false},
-       {texto: "Dalton", correto:false}
-   ]
-},
-    //quiz8//
-{
-    pergunta: "Quem criou o primeiro modelo atomico?",
-    respostas:[
-       {texto: "Thomson",correto:false},
-       {texto: "Rutherford",correto:true},
-       {texto: "Bohr",correto:false},
-       {texto: "Dalton", correto:false}
-   ]
-},
-    //quiz9//
-{
-    pergunta: "Quem criou o primeiro modelo atomico?",
-    respostas:[
-       {texto: "Thomson",correto:false},
-       {texto: "Rutherford",correto:false},
-       {texto: "Bohr",correto:true},
-       {texto: "Dalton", correto:false}
-   ]
-},
-    //quiz10//
-{
-    pergunta: "Quem criou o primeiro modelo atomico?",
-    respostas:[
-       {texto: "Thomson",correto:false},
-       {texto: "Rutherford",correto:false},
-       {texto: "Bohr",correto:false},
-       {texto: "Dalton", correto:true}
-   ]
-}
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('quiz-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const resultDiv = document.getElementById('result');
+    let startTime = new Date();
 
-]
+    submitBtn.addEventListener('click', function () {
+        let correctAnswers = 0;
+        let totalQuestions = 10;
+        let endTime = new Date();
+        let timeTaken = (endTime - startTime) / 1000;
+
+        const answers = {
+            q1: "certo",
+            q2: "certo",
+            q3: "certo",
+            q4: "certo",
+            q5: "certo",
+            q6: "certo",
+            q7: "certo",
+            q8: "certo",
+            q9: "certo",
+            q10: "certo"
+        };
+
+        let formData = new FormData(form);
+        formData.forEach((value, key) => {
+            if (value === answers[key]) {
+                correctAnswers++;
+            }
+        });
+
+        let incorrectAnswers = totalQuestions - correctAnswers;
+
+        resultDiv.innerHTML = `
+            <p>Você acertou ${correctAnswers} de ${totalQuestions} perguntas.</p>
+            <p>Você errou ${incorrectAnswers} perguntas.</p>
+            <p>Tempo total: ${timeTaken.toFixed(2)} segundos.</p>
+        `;
+    });
+});
